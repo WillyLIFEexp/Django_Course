@@ -20,7 +20,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('demoapp.urls'))
+    path('', include('demoapp.urls')),
+    path('with_class/', include('democlassview.urls')),
 ]
 
 # When dealing with error message using this as 404 handler
