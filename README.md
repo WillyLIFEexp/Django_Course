@@ -14,17 +14,11 @@ This will the note for me when learning about Django
 ## :closed_book: Project Directory Structure
 ```bash
 Django_Course/
-├── demoapp/      # Project folder
-│ │ ├── migrations/    # App folder
-│ │ │ ├── __init__.py   # App init file
-│ │ ├── __init__.py   # App init file
-│ │ ├── admin.py       # For asynchronous web applications
-│ │ ├── apps.py       # For asynchronous web applications
-│ │ ├── models.py     # All the models will migrated to the database tables.
-│ │ ├── tests.py      # Test fo the app
-│ │ ├── urls.py       # URL mapping mechanism
-│ │ └── views.py      # User define function called when get client request URL 
-│ ├── demoproject/    # App folder
+├── demoapp/          # Project folder
+│ ├── demoapp/        # Basic app example
+│ ├── democlassview/  # Class view example
+│ ├── demo_models/    # Models example
+│ ├── demoproject/    # Project and App general settings
 │ │ ├── __init__.py   # App init file
 │ │ ├── asgi.py       # For asynchronous web applications
 │ │ ├── settings.py   # Config specific parameters with default values
@@ -54,30 +48,7 @@ python manage.py runserver
 python manage.py shell
 ```
 
-<!-- ## :wrench: Setting up
-
-* Clone the Repo
-* Build the container using the following command.
-    ```
-    docker build -t flask_docker .
-    ```
-* Starting the container with port mapping and let container to run in the background.
-    ```
-    docker run -d -p 5000:5000 flask_docker
-    ```
-* Stop the container by using the following command.
-    ```
-    docker stop <container-id-or-name>
-    ``` -->
-
-<!-- ## :pencil2: Testing
-* Enter the container by the following command.
-    ```
-    docker exec -it <container-id-or-name> bash
-    ```
-* Running pytest to check for result
-    ```
-    pytest tests/test_hello.py
-    ``` -->
-
-## TO-DO
+## Other README.md
+* [Basic app](docs/README.md#getting-started)
+* [Classview app example](docs/README.md#getting-started)
+* [Model app example](docs/README.md#getting-started)
