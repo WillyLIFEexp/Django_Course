@@ -49,6 +49,6 @@ python manage.py shell
 ```
 
 ## Other README.md
-* [Basic app](docs/README.md#getting-started)
-* [Classview app example](docs/README.md#getting-started)
-* [Model app example](docs/README.md#getting-started)
+* [Basic app](https://github.com/WillyLIFEexp/Django_Course/blob/first_check/demoproject/demoapp/README.md)
+* [Classview app example](https://github.com/WillyLIFEexp/Django_Course/blob/first_check/demoproject/democlassview/README.md)
+* [Model app example](https://github.com/WillyLIFEexp/Django_Course/blob/first_check/demoproject/demo_models/README.md)

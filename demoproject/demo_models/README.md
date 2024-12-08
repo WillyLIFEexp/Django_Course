@@ -78,5 +78,14 @@ Django_Course/
     ```bash
     python manage.py sqlmigrate <app_name> <migration_name> 
     ```
+### Edit in AdminPage
+* Update admin.py under the app.
+```python
+from django.contrib import admin
+from .models import Items
+
+# Register your models here.
+admin.site.register(Items)
+```
 
 ## Note & Mistakes
