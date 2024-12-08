@@ -1,3 +1,14 @@
+demoproject/demoapp/__pycache__/__init__.cpython-312.pyc
+demoproject/demoapp/__pycache__/admin.cpython-312.pyc
+demoproject/demoapp/__pycache__/apps.cpython-312.pyc
+demoproject/demoapp/__pycache__/models.cpython-312.pyc
+demoproject/democlassview/__pycache__/__init__.cpython-312.pyc
+demoproject/democlassview/__pycache__/admin.cpython-312.pyc
+demoproject/democlassview/__pycache__/apps.cpython-312.pyc
+demoproject/democlassview/__pycache__/models.cpython-312.pyc
+demoproject/demoproject/__pycache__/__init__.cpython-312.pyc
+demoproject/demoproject/__pycache__/settings.cpython-312.pyc
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

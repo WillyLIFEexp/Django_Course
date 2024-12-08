@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'demoapp', # <- we need to add this if we run django-admin startapp demoapp
-    'democlassview'
+    'democlassview',
+    'demo_models'
 ]
 
 MIDDLEWARE = [
