@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import os
 
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -44,7 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'demoapp', # <- we need to add this if we run django-admin startapp demoapp
     'democlassview',
-    'demo_models'
+    'demo_models',
+    'demo_form'
 ]
 
 MIDDLEWARE = [
@@ -64,7 +67,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'democlassview/templates')
+            os.path.join(BASE_DIR, 'democlassview/templates'),
+            os.path.join(BASE_DIR, 'demo_form/templates')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -86,8 +90,12 @@ WSGI_APPLICATION = 'demoproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'django_db',
+        'USER': 'django_user',
+        'PASSWORD': str(os.getenv('PASSWORD')),
+        'HOST': 'localhost',
+        'PORT': '5433',
     }
 }
 

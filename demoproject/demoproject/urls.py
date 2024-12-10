@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('demoapp.urls')),
     path('with_class/', include('democlassview.urls')),
+    path('app_form/', include('demo_form.urls')),
 ]
 
 # When dealing with error message using this as 404 handler
