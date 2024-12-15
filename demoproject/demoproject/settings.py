@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'demoapp', # <- we need to add this if we run django-admin startapp demoapp
     'democlassview',
     'demo_models',
-    'demo_form'
+    'demo_form',
+    'demo_api'
 ]
 
 MIDDLEWARE = [
