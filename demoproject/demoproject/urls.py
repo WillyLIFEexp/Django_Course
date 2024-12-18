@@ -25,6 +25,7 @@ urlpatterns = [
     path('app_form/', include('demo_form.urls')),
     path('api/', include('demo_api.urls')),
     path('api_drf/', include('demo_drf.urls')),
+    path('api_fo/', include('demo_filter_order.urls')),
 ]
 
 # When dealing with error message using this as 404 handler
