@@ -48,7 +48,9 @@ INSTALLED_APPS = [
     'democlassview',
     'demo_models',
     'demo_form',
-    'demo_api'
+    'demo_api',
+    'rest_framework',
+    'demo_drf'
 ]
 
 MIDDLEWARE = [

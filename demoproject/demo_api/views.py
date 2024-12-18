@@ -12,7 +12,6 @@ from .models import Book
 def books(request):
     if request.method == 'GET':
         books = Book.objects.all().values()
-        a2 = '222'
         return JsonResponse({'books': list(books)})
     elif request.method == 'POST':
         title = request.POST.get('title')
