@@ -23,6 +23,8 @@ urlpatterns = [
     path('', include('demoapp.urls')),
     path('with_class/', include('democlassview.urls')),
     path('app_form/', include('demo_form.urls')),
+    path('api/', include('demo_api.urls')),
+    path('api_drf/', include('demo_drf.urls')),
 ]
 
 # When dealing with error message using this as 404 handler
